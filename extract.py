@@ -8,7 +8,7 @@ import xml.etree.ElementTree as ET
 if len(sys.argv) != 2:
     sys.exit(1)
 HWPIX_FILE = sys.argv[1]
-OUTPUT_DIR = '인물별문단_hwpml'  # 찾은 단어가 담긴 문단들이 포함된 hwpml 파일들이 저장될 위치
+OUTPUT_DIR = ''  # 찾은 단어가 담긴 문단들이 포함된 hwpml 파일들이 저장될 위치
 CHAR_NAMES = []  # 원하는 단어 나열
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
